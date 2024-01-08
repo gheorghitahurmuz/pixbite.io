@@ -1,0 +1,55 @@
+:root {
+  --background: #021727;
+  --foreground: #d6deeb;
+
+  --logo-color: #b39554;
+  --link-color: #78ccf0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
+    Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+p,
+h1 {
+  overflow-wrap: break-word;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    color: var(--logo-color);
+  }
+
+  .headline {
+    text-align: center;
+  }
+
+  .contact {
+    margin-top: 2.5rem;
+
+    a {
+      color: var(--link-color);
+    }
+  }
+}
